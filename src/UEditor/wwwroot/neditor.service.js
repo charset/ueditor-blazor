@@ -8,7 +8,7 @@ UE.Editor.prototype._bkGetActionUrl = UE.Editor.prototype.getActionUrl;
 UE.Editor.prototype.getActionUrl = function(action) {
     /* 按config中的xxxActionName返回对应的接口地址 */
     if (action == 'uploadimage' || action == 'uploadscrawl') {
-        return 'http://a.b.com/upload.php';
+        return '/api/Upload';
     } else if (action == 'uploadvideo') {
         return 'http://a.b.com/video.php';
     } else {
